@@ -1,0 +1,38 @@
+###
+GET http://localhost:8080/tutorials
+
+###
+GET http://localhost:8080/tutorials/1
+
+###
+GET http://localhost:8080/tutorials/published
+
+###
+GET http://localhost:8080/tutorials?title=Book
+
+###
+POST http://localhost:8080/tutorials
+Content-Type: application/json
+
+{
+  "title": "Second One",
+  "description": "Second Book",
+  "published": true
+}
+
+###
+PUT http://localhost:8080/tutorials/1
+Content-Type: application/json
+
+{
+  "title": "First Book",
+  "description": "First Book",
+  "published": true
+}
+
+###
+DELETE http://localhost:8080/tutorials/1
+
+###
+DELETE http://localhost:8080/tutorials
+
